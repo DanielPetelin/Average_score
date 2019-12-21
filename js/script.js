@@ -16,6 +16,7 @@ for ( var i = 0; i < n; i++ ) {
 	scores[i] = Math.floor( Math.random() * (max - min + 1) ) + min;
 	sum += scores[i];
 }
+
 sum = Math.round( sum / n );
 
 switch ( sum ) {
@@ -34,3 +35,7 @@ switch ( sum ) {
 	default:
 		who = 'не ясно кто';
 }
+
+console.log( 'Оценки: ' + scores );
+console.log( 'Средняя оценка - ' + sum );
+console.log( 'Ученик - ' + who );
