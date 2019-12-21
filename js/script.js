@@ -39,3 +39,5 @@ switch ( sum ) {
 console.log( 'Оценки: ' + scores );
 console.log( 'Средняя оценка - ' + sum );
 console.log( 'Ученик - ' + who );
+
+var most = [ 0, 0, 0, 0 ];
