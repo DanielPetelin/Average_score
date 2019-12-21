@@ -1,5 +1,5 @@
 var most = [ 0, 0, 0, 0 ];
-var n = 20;
+var n = 15;
 var scores = [];
 var min = 2;
 var max = 5;
