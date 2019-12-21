@@ -16,3 +16,4 @@ for ( var i = 0; i < n; i++ ) {
 	scores[i] = Math.floor( Math.random() * (max - min + 1) ) + min;
 	sum += scores[i];
 }
+sum = Math.round( sum / n );
