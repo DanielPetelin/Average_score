@@ -17,3 +17,20 @@ for ( var i = 0; i < n; i++ ) {
 	sum += scores[i];
 }
 sum = Math.round( sum / n );
+
+switch ( sum ) {
+	case 5:
+		who = 'отличник';
+		break;
+	case 4:
+		who = 'хорошист';
+		break;
+	case 3:
+		who = 'троечник';
+		break;
+	case 2:
+		who = 'двоечник';
+		break;
+	default:
+		who = 'не ясно кто';
+}
