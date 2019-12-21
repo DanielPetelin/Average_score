@@ -10,11 +10,13 @@ var max = 5;
 var sum = 0;
 //определение переменной содержащей определение ученика
 var who = '';
+var most = [ 0, 0, 0, 0 ];
 
 //цикл формирования списка оценок
 for ( var i = 0; i < n; i++ ) {
 	scores[i] = Math.floor( Math.random() * (max - min + 1) ) + min;
-	sum += scores[i];
+    sum += scores[i];
+    most[ scores[i] - min ]++;
 }
 
 sum = Math.round( sum / n );
@@ -39,5 +41,3 @@ switch ( sum ) {
 console.log( 'Оценки: ' + scores );
 console.log( 'Средняя оценка - ' + sum );
 console.log( 'Ученик - ' + who );
-
-var most = [ 0, 0, 0, 0 ];
